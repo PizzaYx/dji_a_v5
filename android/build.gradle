@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.1.0")
+        classpath("com.android.tools.build:gradle:8.1.4")
     }
 }
 
@@ -27,8 +27,8 @@ android {
     compileSdk = 35
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     defaultConfig {
@@ -37,7 +37,7 @@ android {
 
     dependencies {
         testImplementation("junit:junit:4.13.2")
-        testImplementation("org.mockito:mockito-core:5.0.0")
+        testImplementation("org.mockito:mockito-core:5.2.0")
     }
 
     testOptions {
